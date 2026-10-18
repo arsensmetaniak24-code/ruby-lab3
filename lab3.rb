@@ -17,7 +17,7 @@ games = {
 # Task 2
 
 puts 'Task 2'
-p games.to_a
+puts games.to_a
 
 # Task 3
 puts 'Task 3'
@@ -56,6 +56,7 @@ puts 'Task 7'
 p games
     .uniq { |_, details| details[:genre] }
     .map { |_, details| details[:genre] }
+    .reject(&:empty?)
     .size
 
 # Task 8
