@@ -60,6 +60,7 @@ p games
     .size
 
 # Task 8
+puts 'Task 8'
 no_genre_games = games
                    .filter { |_, details| details[:genre].nil? || details[:genre].empty? }
                    .map { |name, _| name.to_s }
